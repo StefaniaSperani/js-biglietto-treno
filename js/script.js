@@ -43,10 +43,15 @@ total.toFixed(2);
 // console.log(total.toFixed(2));
 
 let finalPrice = `
-    <div>La tua età: ${passengerAge}</div>
-    <div>Il costo del tuo biglietto: ${total}</div>
+    <div class="fs-3">La tua età: ${passengerAge}</div>
+    <div class="fs-3">Il costo del tuo biglietto: ${total.toFixed(2)}</div>
+    <div class="pt-2">Se hai meno di 18 anni hai uno sconto del <span class="red">20%!</span>
+    <div>Se hai più di 65 anni hai uno sconto del <span class="red">40%!</span>
 `;
 
-const element = document.getElementById('ticketPrice');
+const element = document.getElementById('ticket-price');
+
 
 element.innerHTML = finalPrice;
+
+// console.log(element);
