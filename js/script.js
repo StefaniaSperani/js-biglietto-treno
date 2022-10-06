@@ -24,12 +24,17 @@ let ds20 = totalPrice * 0.2;
 let ds40 = totalPrice * 0.4;
 
 // console.log(ds20);
-
-
 if(passengerAge < 18){
+    let total = (totalPrice - ds20);
     
+// console.log(total);
 } else if(passengerAge > 65){
-    
+    let total = (totalPrice - ds40);
+// console.log(total);
 } else{
-    
+    let total = totalPrice;
+// console.log(total);
 }
+
+
+// let fix = total.toFixed(2);
