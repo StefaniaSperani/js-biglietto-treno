@@ -40,4 +40,13 @@ if(passengerAge < 18){
 }
 total.toFixed(2);
 
-console.log(total.toFixed(2));
+// console.log(total.toFixed(2));
+
+let finalPrice = `
+    <div>La tua età: ${passengerAge}</div>
+    <div>Il costo del tuo biglietto: ${total}</div>
+`;
+
+const element = document.getElementById('ticketPrice');
+
+element.innerHTML = finalPrice;
